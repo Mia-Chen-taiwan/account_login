@@ -1,0 +1,22 @@
+
+<h1 class="text-center my-5" style="color: white">Account Login</h1>
+<div class="container px-5" style="width: 80%;">
+  <form method="POST" action="/">
+  <div class="row justify-content-center">
+      <div class="form-group col-10">
+        <label for="email"></label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email" value="{{userEmail}}">
+      </div>
+      <div class="form-group col-10">
+        <label for="password"></label>
+        <input type="password" class="form-control" id="password" placeholder="Password" name="password" value="{{userPassword}}">
+      </div>
+      <p class="col-10" style="color: red;">
+          {{errMessage}}
+      </p>
+      <div class="col-10 mt-5 text-center">
+          <button type="submit" class="btn btn-primary">Sign In</button>
+      </div>
+  </div>
+  </form>
+</div>
